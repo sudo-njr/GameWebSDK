@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+      "module": "ESNext",
+      "target": "ES5",
+      "lib": ["ES2016", "DOM"],
+      "strict": true,
+      "declaration": false,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "moduleResolution": "node",
+      "outDir": "dist"
+    },
+    "include": ["index.ts"],
+    "exclude": ["node_modules", "dist"]
+  }

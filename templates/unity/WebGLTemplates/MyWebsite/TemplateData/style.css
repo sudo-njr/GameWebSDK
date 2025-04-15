@@ -1,0 +1,48 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+#unity-canvas {
+  position: fixed;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background: #231f20;
+}
+
+#loading-cover {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+#loading-cover::before {
+  content: url("unity-logo-dark.png");
+  display: inline-block;
+  width: 154px;
+  height: 130px;
+}
+
+#loading-cover > div {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 141px;
+  height: 18px;
+  border: solid 2px #fff;
+}
+
+#unity-progress-bar {
+  width: 0%;
+  height: 100%;
+  background: #fff;
+}
